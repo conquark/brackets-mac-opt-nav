@@ -1,0 +1,12 @@
+{
+    "name": "billturner.mac.opt.nav",
+    "title": "Mac Option Tab Nav",
+    "description": "Navigate through open docs using option-tab or shift-option-tab on a Mac",
+    "homepage": "",
+    "version": "0.0.1",
+    "author": "Bill Turner",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=1.4"
+    }
+}

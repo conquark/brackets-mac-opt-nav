@@ -1,7 +1,3 @@
-/*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
-/*global define, $, brackets, window */
-
-/** Simple extension that adds a "File > Hello World" menu item */
 define(function (require, exports, module) {
     "use strict";
 
@@ -14,8 +10,8 @@ define(function (require, exports, module) {
     KeyBindingManager.removeBinding('Shift-Opt-Tab');
 
     // Rebind to the command executed with Ctrl+PageUp/PageDown
-    KeyBindingManager.addBinding(Commands.NAVIGATE_NEXT_DOC, 'Opt-Tab');
-    KeyBindingManager.addBinding(Commands.NAVIGATE_PREV_DOC, 'Shift-Opt-Tab');
+    KeyBindingManager.addBinding(exports.NAVIGATE_NEXT_DOC, 'Opt-Tab');
+    KeyBindingManager.addBinding(exports.NAVIGATE_PREV_DOC, 'Shift-Opt-Tab');
 
     // We could also add a key binding at the same time:
     //menu.addMenuItem(MY_COMMAND_ID, "Ctrl-Alt-W");
